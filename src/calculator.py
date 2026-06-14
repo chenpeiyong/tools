@@ -1,0 +1,20 @@
+class Calculator:
+    """一个简单的计算器类，用于演示单元测试"""
+    
+    @staticmethod
+    def add(a: float, b: float) -> float:
+        return a + b
+    
+    @staticmethod
+    def subtract(a: float, b: float) -> float:
+        return a - b
+    
+    @staticmethod
+    def multiply(a: float, b: float) -> float:
+        return a * b
+    
+    @staticmethod
+    def divide(a: float, b: float) -> float:
+        if b == 0:
+            raise ValueError("Division by zero is not allowed")
+        return a / b
